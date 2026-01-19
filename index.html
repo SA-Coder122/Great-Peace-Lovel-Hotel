@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Great Peace & Love Hotel is a top-rated, serene hotel in Ashalaja, Ghana offering comfortable rooms, great service, and easy WhatsApp booking. Rated 9.3/10 - Your peaceful getaway awaits."
+    />
+    <meta
+      name="keywords"
+      content="hotel in Ashalaja, Ghana hotel, Great Peace & Love Hotel, accommodation in Ashalaja, hotels near Accra"
+    />
+    <meta name="author" content="Great Peace & Love Hotel" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta
+      property="og:title"
+      content="Great Peace & Love Hotel | Top Hotel in Ashalaja, Ghana"
+    />
+    <meta
+      property="og:description"
+      content="Experience serenity and comfort at Great Peace & Love Hotel - Your trusted getaway in Ashalaja, Ghana"
+    />
+    <meta property="og:type" content="website" />
+
+    <title>Great Peace & Love Hotel | Top Hotel in Ashalaja, Ghana</title>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Font Awesome for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="container nav-container">
+        <div class="logo">
+          <i class="fas fa-hotel"></i>
+          <div class="logo-text">
+            <span class="logo-main">Great Peace & Love</span>
+            <span class="logo-sub">Hotel</span>
+          </div>
+        </div>
+
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="rooms.html" class="nav-link">Rooms</a></li>
+          <li><a href="amenities.html" class="nav-link">Amenities</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-right">
+          <a href="tel:+233534078670" class="nav-phone">
+            <i class="fas fa-phone"></i>
+            <span>+233 534 078 670</span>
+          </a>
+          <button class="btn btn-primary book-btn" onclick="bookNow()">
+            Book Now
+          </button>
+        </div>
+
+        <button class="mobile-toggle" id="mobileToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-badge fade-in">
+          <i class="fas fa-star"></i>
+          <span>Rated 9.3 / 10 - Superb</span>
+        </div>
+        <h1 class="hero-title fade-in-up">
+          Welcome to Great Peace & Love Hotel
+        </h1>
+        <p class="hero-subtitle fade-in-up">
+          Your Serene Getaway in Ashalaja, Ghana
+        </p>
+        <p class="hero-description fade-in-up">
+          Experience tranquility and comfort at one of Ashalaja's most trusted
+          and highly-rated hotels. Perfect for business travelers and leisure
+          seekers who value peace, privacy, and exceptional service.
+        </p>
+        <div class="hero-buttons fade-in-up">
+          <button class="btn btn-primary btn-lg" onclick="bookNow()">
+            <i class="fab fa-whatsapp"></i>
+            Book via WhatsApp
+          </button>
+          <a href="rooms.html" class="btn btn-secondary btn-lg">
+            <i class="fas fa-door-open"></i>
+            View Our Rooms
+          </a>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="scroll-indicator">
+        <div class="scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- Quick Features -->
+    <section class="quick-features">
+      <div class="container">
+        <div class="features-grid">
+          <div class="feature-card reveal">
+            <div class="feature-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h3>Prime Location</h3>
+            <p>Ideally located in Ashalaja for easy access and convenience</p>
+          </div>
+
+          <div class="feature-card reveal">
+            <div class="feature-icon">
+              <i class="fas fa-bed"></i>
+            </div>
+            <h3>Comfortable Rooms</h3>
+            <p>
+              Luxurious, modern, and fully equipped spaces for total comfort
+            </p>
+          </div>
+
+          <div class="feature-card reveal">
+            <div class="feature-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>Friendly Staff</h3>
+            <p>Our welcoming staff ensures a seamless experience</p>
+          </div>
+
+          <div class="feature-card reveal">
+            <div class="feature-icon">
+              <i class="fas fa-tag"></i>
+            </div>
+            <h3>Great Value</h3>
+            <p>Enjoy affordable rates with premium facilities</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section with Counter Animation -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card reveal">
+            <div class="stat-icon">
+              <i class="fas fa-door-open"></i>
+            </div>
+            <div class="stat-number" data-target="10">0</div>
+            <div class="stat-suffix">+</div>
+            <div class="stat-label">Rooms Available</div>
+          </div>
+
+          <div class="stat-card reveal">
+            <div class="stat-icon">
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="stat-number" data-target="9.3">0</div>
+            <div class="stat-suffix">/10</div>
+            <div class="stat-label">Guest Rating</div>
+          </div>
+
+          <div class="stat-card reveal">
+            <div class="stat-icon">
+              <i class="fas fa-map-marked-alt"></i>
+            </div>
+            <div class="stat-number" data-target="20">0</div>
+            <div class="stat-suffix">+</div>
+            <div class="stat-label">Tourist Destinations</div>
+          </div>
+
+          <div class="stat-card reveal">
+            <div class="stat-icon">
+              <i class="fas fa-smile"></i>
+            </div>
+            <div class="stat-number" data-target="1000">0</div>
+            <div class="stat-suffix">+</div>
+            <div class="stat-label">Happy Guests</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="welcome-section">
+      <div class="container">
+        <div class="welcome-content">
+          <div class="welcome-images reveal">
+            <div class="welcome-img-main">
+              <img
+                src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=600"
+                alt="Hotel Room"
+                loading="lazy"
+              />
+            </div>
+            <div class="welcome-img-small">
+              <img
+                src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=400"
+                alt="Hotel Exterior"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <div class="welcome-text reveal">
+            <span class="section-subtitle">DISCOVER SERENITY</span>
+            <h2 class="section-title">
+              Experience Peace & Comfort in the Heart of Ashalaja
+            </h2>
+            <p>
+              At Great Peace & Love Hotel, we offer more than just
+              accommodation—we provide a sanctuary of calm and comfort. Our
+              10-bedroom hotel is designed to give you the perfect balance of
+              modern amenities and serene atmosphere.
+            </p>
+            <p>
+              Whether you're traveling for business or leisure, our highly-rated
+              hotel promises an unforgettable stay. With a 9.3/10 rating, we're
+              proud to be one of the most trusted and frequently booked hotels
+              in the Ashalaja-Amasaman area.
+            </p>
+
+            <div class="welcome-features">
+              <div class="welcome-feature">
+                <i class="fas fa-check-circle"></i>
+                <span>24/7 Reception & Service</span>
+              </div>
+              <div class="welcome-feature">
+                <i class="fas fa-check-circle"></i>
+                <span>Free Wi-Fi & Parking</span>
+              </div>
+              <div class="welcome-feature">
+                <i class="fas fa-check-circle"></i>
+                <span>On-site Restaurant & Bar</span>
+              </div>
+              <div class="welcome-feature">
+                <i class="fas fa-check-circle"></i>
+                <span>Organized Tours Available</span>
+              </div>
+            </div>
+
+            <a href="about.html" class="btn btn-primary">
+              Learn More About Us
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rooms Preview -->
+    <section class="rooms-preview">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">ACCOMMODATION</span>
+          <h2 class="section-title">Our Rooms & Suites</h2>
+          <p class="section-description">
+            Choose from our range of comfortable, well-appointed rooms designed
+            for your ultimate relaxation
+          </p>
+        </div>
+
+        <div class="rooms-grid">
+          <div class="room-card reveal">
+            <div class="room-image">
+              <img
+                src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=600"
+                alt="Executive Room"
+                loading="lazy"
+              />
+              <div class="room-badge">Popular</div>
+            </div>
+            <div class="room-content">
+              <h3>Executive Rooms</h3>
+              <p>
+                Spacious rooms with premium furnishings, perfect for business
+                travelers seeking comfort and style.
+              </p>
+              <ul class="room-features-list">
+                <li><i class="fas fa-check"></i> King-size bed</li>
+                <li><i class="fas fa-check"></i> Work desk</li>
+                <li><i class="fas fa-check"></i> Private balcony</li>
+                <li><i class="fas fa-check"></i> LED TV</li>
+              </ul>
+              <button
+                class="btn btn-primary"
+                onclick="bookRoom('Executive Room')"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+
+          <div class="room-card reveal">
+            <div class="room-image">
+              <img
+                src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=600"
+                alt="First Class Room"
+                loading="lazy"
+              />
+            </div>
+            <div class="room-content">
+              <h3>First Class Rooms</h3>
+              <p>
+                Well-appointed rooms offering excellent value with all essential
+                amenities for a comfortable stay.
+              </p>
+              <ul class="room-features-list">
+                <li><i class="fas fa-check"></i> Queen-size bed</li>
+                <li><i class="fas fa-check"></i> Bathtub & shower</li>
+                <li><i class="fas fa-check"></i> Air conditioning</li>
+                <li><i class="fas fa-check"></i> Free Wi-Fi</li>
+              </ul>
+              <button
+                class="btn btn-primary"
+                onclick="bookRoom('First Class Room')"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+
+          <div class="room-card reveal">
+            <div class="room-image">
+              <img
+                src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600"
+                alt="Second Class Room"
+                loading="lazy"
+              />
+              <div class="room-badge">Best Value</div>
+            </div>
+            <div class="room-content">
+              <h3>Second Class Rooms</h3>
+              <p>
+                Cozy and affordable rooms with essential comforts, ideal for
+                budget-conscious travelers.
+              </p>
+              <ul class="room-features-list">
+                <li><i class="fas fa-check"></i> Comfortable bed</li>
+                <li><i class="fas fa-check"></i> Private bathroom</li>
+                <li><i class="fas fa-check"></i> Air conditioning</li>
+                <li><i class="fas fa-check"></i> Digital TV</li>
+              </ul>
+              <button
+                class="btn btn-primary"
+                onclick="bookRoom('Second Class Room')"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-footer">
+          <a href="rooms.html" class="btn btn-secondary btn-lg">
+            View All Rooms
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">GUEST REVIEWS</span>
+          <h2 class="section-title">What Our Guests Say</h2>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card reveal">
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "Amazing experience! The staff was incredibly welcoming and the
+              rooms were spotless. Perfect peaceful environment away from the
+              city noise."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">KA</div>
+              <div class="author-info">
+                <h4>Kwame Asante</h4>
+                <span>Business Traveler</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal">
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "Great Peace & Love Hotel truly lives up to its name. It's my
+              go-to place whenever I'm in Ashalaja. Highly recommended!"
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">AN</div>
+              <div class="author-info">
+                <h4>Abena Nyarko</h4>
+                <span>Leisure Guest</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal">
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "Excellent service, comfortable beds, and great food. The tours
+              they organized made our trip unforgettable. Will definitely come
+              back!"
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">EO</div>
+              <div class="author-info">
+                <h4>Emmanuel Osei</h4>
+                <span>Tourist</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="cta-overlay"></div>
+      <div class="container">
+        <div class="cta-content reveal">
+          <h2>Ready to Experience True Serenity?</h2>
+          <p>
+            Book your stay at Great Peace & Love Hotel today and discover why
+            we're Ashalaja's top-rated hotel
+          </p>
+          <button class="btn btn-light btn-lg" onclick="bookNow()">
+            <i class="fab fa-whatsapp"></i>
+            Book via WhatsApp
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <i class="fas fa-hotel"></i>
+              <div class="logo-text">
+                <span class="logo-main">Great Peace & Love</span>
+                <span class="logo-sub">Hotel</span>
+              </div>
+            </div>
+            <p>
+              Step into a world where elegance meets serenity. Experience
+              luxury, comfort, and exceptional service at one of Ashalaja's
+              finest hotels.
+            </p>
+            <div class="footer-social">
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="https://wa.me/233534078670" aria-label="WhatsApp"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="rooms.html">Rooms</a></li>
+              <li><a href="amenities.html">Amenities</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Services</h3>
+            <ul class="footer-links">
+              <li><a href="amenities.html">Restaurant & Bar</a></li>
+              <li><a href="amenities.html">Free Wi-Fi</a></li>
+              <li><a href="amenities.html">Free Parking</a></li>
+              <li><a href="amenities.html">Conference Spaces</a></li>
+              <li><a href="amenities.html">Organized Tours</a></li>
+              <li><a href="amenities.html">24-Hour Reception</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Contact Us</h3>
+            <ul class="footer-contact">
+              <li>
+                <i class="fas fa-phone"></i>
+                <a href="tel:+233534078670">+233 534 078 670</a>
+              </li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Ashalaja, Greater Accra<br />Region, Ghana</span>
+              </li>
+              <li>
+                <i class="fas fa-clock"></i>
+                <span>24-Hour Check-in Available</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 Great Peace & Love Hotel. All rights reserved.</p>
+          <p>Designed with <i class="fas fa-heart"></i> for excellence</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>

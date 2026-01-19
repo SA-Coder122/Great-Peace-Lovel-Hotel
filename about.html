@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Great Peace & Love Hotel - a 10-room boutique hotel in Ashalaja offering exceptional service, comfort, and serenity since its establishment.">
+    <title>About Us | Great Peace & Love Hotel</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="fas fa-hotel"></i>
+                <div class="logo-text">
+                    <span class="logo-main">Great Peace & Love</span>
+                    <span class="logo-sub">Hotel</span>
+                </div>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link active">About</a></li>
+                <li><a href="rooms.html" class="nav-link">Rooms</a></li>
+                <li><a href="amenities.html" class="nav-link">Amenities</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <div class="nav-right">
+                <a href="tel:+233534078670" class="nav-phone">
+                    <i class="fas fa-phone"></i>
+                    <span>+233 534 078 670</span>
+                </a>
+                <button class="btn btn-primary book-btn" onclick="bookNow()">
+                    Book Now
+                </button>
+            </div>
+            
+            <button class="mobile-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-overlay"></div>
+        <div class="container">
+            <div class="page-header-content">
+                <h1 class="fade-in-up">About Us</h1>
+                <p class="fade-in-up">Discover our story of hospitality and excellence</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text reveal">
+                    <span class="section-subtitle">OUR STORY</span>
+                    <h2 class="section-title">Welcome to Great Peace & Love Hotel</h2>
+                    <p>
+                        Nestled in the heart of Ashalaja, Greater Accra Region, Great Peace & Love Hotel 
+                        stands as a beacon of comfort, tranquility, and exceptional hospitality. Our 
+                        10-bedroom boutique hotel has earned a stellar reputation as one of the most 
+                        trusted and highly-rated accommodations in the Ashalaja-Amasaman area.
+                    </p>
+                    <p>
+                        With a remarkable 9.3/10 rating, we pride ourselves on creating an environment 
+                        where serenity meets luxury. Whether you're a business traveler seeking a peaceful 
+                        retreat or a leisure guest looking for a relaxing getaway, our hotel offers the 
+                        perfect blend of modern amenities and warm, personalized service.
+                    </p>
+                    <p>
+                        Our mission is simple: to provide every guest with an unforgettable experience 
+                        characterized by comfort, privacy, and genuine Ghanaian hospitality. From our 
+                        spacious, well-appointed rooms to our attentive staff, every detail is crafted 
+                        to ensure your stay is nothing short of exceptional.
+                    </p>
+                </div>
+                
+                <div class="about-image reveal">
+                    <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=600" alt="Hotel Building" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose-us">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">WHY CHOOSE US</span>
+                <h2 class="section-title">What Makes Us Special</h2>
+            </div>
+            
+            <div class="why-grid">
+                <div class="why-card reveal">
+                    <div class="why-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Serene Environment</h3>
+                    <p>
+                        Experience true peace in our calm and quiet setting. Our hotel is designed as 
+                        a private sanctuary, offering a perfect escape from the hustle and bustle of city life.
+                    </p>
+                </div>
+                
+                <div class="why-card reveal">
+                    <div class="why-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Top-Rated Service</h3>
+                    <p>
+                        Our 9.3/10 rating speaks for itself. Guests consistently praise our stellar staff 
+                        service, cleanliness, and attention to detail.
+                    </p>
+                </div>
+                
+                <div class="why-card reveal">
+                    <div class="why-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Excellent Dining</h3>
+                    <p>
+                        Enjoy delicious local and continental meals at our on-site restaurant, complemented 
+                        by a fully stocked bar for your refreshment needs.
+                    </p>
+                </div>
+                
+                <div class="why-card reveal">
+                    <div class="why-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Tour Services</h3>
+                    <p>
+                        Explore Ghana with our organized tours to over 20 tourist destinations across 
+                        the country. Let us help you discover the beauty of Ghana.
+                    </p>
+                </div>
+                
+                <div class="why-card reveal">
+                    <div class="why-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Business-Friendly</h3>
+                    <p>
+                        Perfect for corporate travelers with conference spaces, work desks in rooms, 
+                        and flexible meal support for early or late schedules.
+                    </p>
+                </div>
+                
+                <div class="why-card reveal">
+                    <div class="why-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Trusted & Reliable</h3>
+                    <p>
+                        We're one of the most frequently booked hotels in Ashalaja, trusted by both 
+                        local and international guests for consistent quality.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values -->
+    <section class="values-section">
+        <div class="container">
+            <div class="values-content">
+                <div class="values-image reveal">
+                    <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=600" alt="Hotel Reception" loading="lazy">
+                </div>
+                
+                <div class="values-text reveal">
+                    <span class="section-subtitle">OUR COMMITMENT</span>
+                    <h2 class="section-title">Our Core Values</h2>
+                    
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="value-content">
+                            <h3>Hospitality First</h3>
+                            <p>
+                                We treat every guest like family, ensuring personalized service and 
+                                genuine warmth in every interaction.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <div class="value-content">
+                            <h3>Quality Excellence</h3>
+                            <p>
+                                From room cleanliness to meal preparation, we maintain the highest 
+                                standards in everything we do.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <div class="value-content">
+                            <h3>Peace & Comfort</h3>
+                            <p>
+                                We're committed to providing a tranquil environment where guests can 
+                                truly relax and rejuvenate.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="value-content">
+                            <h3>24/7 Availability</h3>
+                            <p>
+                                Our dedicated staff is always ready to assist you, any time of day or night.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card reveal">
+                    <div class="stat-icon">
+                        <i class="fas fa-door-open"></i>
+                    </div>
+                    <div class="stat-number" data-target="10">0</div>
+                    <div class="stat-suffix">+</div>
+                    <div class="stat-label">Rooms Available</div>
+                </div>
+                
+                <div class="stat-card reveal">
+                    <div class="stat-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="stat-number" data-target="9.3">0</div>
+                    <div class="stat-suffix">/10</div>
+                    <div class="stat-label">Guest Rating</div>
+                </div>
+                
+                <div class="stat-card reveal">
+                    <div class="stat-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <div class="stat-number" data-target="20">0</div>
+                    <div class="stat-suffix">+</div>
+                    <div class="stat-label">Tourist Destinations</div>
+                </div>
+                
+                <div class="stat-card reveal">
+                    <div class="stat-icon">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <div class="stat-number" data-target="1000">0</div>
+                    <div class="stat-suffix">+</div>
+                    <div class="stat-label">Happy Guests</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-overlay"></div>
+        <div class="container">
+            <div class="cta-content reveal">
+                <h2>Experience the Difference</h2>
+                <p>Join thousands of satisfied guests who have made Great Peace & Love Hotel their preferred choice in Ashalaja</p>
+                <button class="btn btn-light btn-lg" onclick="bookNow()">
+                    <i class="fab fa-whatsapp"></i>
+                    Book Your Stay Now
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-hotel"></i>
+                        <div class="logo-text">
+                            <span class="logo-main">Great Peace & Love</span>
+                            <span class="logo-sub">Hotel</span>
+                        </div>
+                    </div>
+                    <p>
+                        Step into a world where elegance meets serenity. Experience luxury, comfort, 
+                        and exceptional service at one of Ashalaja's finest hotels.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://wa.me/233534078670" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="rooms.html">Rooms</a></li>
+                        <li><a href="amenities.html">Amenities</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="amenities.html">Restaurant & Bar</a></li>
+                        <li><a href="amenities.html">Free Wi-Fi</a></li>
+                        <li><a href="amenities.html">Free Parking</a></li>
+                        <li><a href="amenities.html">Conference Spaces</a></li>
+                        <li><a href="amenities.html">Organized Tours</a></li>
+                        <li><a href="amenities.html">24-Hour Reception</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+233534078670">+233 534 078 670</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Ashalaja, Greater Accra<br>Region, Ghana</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>24-Hour Check-in Available</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Great Peace & Love Hotel. All rights reserved.</p>
+                <p>Designed with <i class="fas fa-heart"></i> for excellence</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

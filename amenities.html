@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the amenities at Great Peace & Love Hotel - Free parking, Wi-Fi, restaurant, bar, conference spaces, and organized tours across Ghana.">
+    <title>Amenities & Services | Great Peace & Love Hotel</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="fas fa-hotel"></i>
+                <div class="logo-text">
+                    <span class="logo-main">Great Peace & Love</span>
+                    <span class="logo-sub">Hotel</span>
+                </div>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="rooms.html" class="nav-link">Rooms</a></li>
+                <li><a href="amenities.html" class="nav-link active">Amenities</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <div class="nav-right">
+                <a href="tel:+233534078670" class="nav-phone">
+                    <i class="fas fa-phone"></i>
+                    <span>+233 534 078 670</span>
+                </a>
+                <button class="btn btn-primary book-btn" onclick="bookNow()">
+                    Book Now
+                </button>
+            </div>
+            
+            <button class="mobile-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-overlay"></div>
+        <div class="container">
+            <div class="page-header-content">
+                <h1 class="fade-in-up">Amenities & Services</h1>
+                <p class="fade-in-up">Everything you need for a comfortable and memorable stay</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Amenities -->
+    <section class="amenities-main">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">FACILITIES</span>
+                <h2 class="section-title">World-Class Amenities</h2>
+                <p class="section-description">
+                    We provide comprehensive facilities to ensure your stay is as comfortable and convenient as possible
+                </p>
+            </div>
+            
+            <div class="amenities-main-grid">
+                <div class="amenity-card-large reveal">
+                    <div class="amenity-icon-large">
+                        <i class="fas fa-parking"></i>
+                    </div>
+                    <h3>Free Private Parking</h3>
+                    <p>
+                        Enjoy complimentary on-site parking in our secure, private parking area. Your vehicle 
+                        is safe and easily accessible throughout your stay.
+                    </p>
+                </div>
+                
+                <div class="amenity-card-large reveal">
+                    <div class="amenity-icon-large">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>Free Wi-Fi</h3>
+                    <p>
+                        Stay connected with high-speed wireless internet available throughout the property, 
+                        perfect for both business and leisure needs.
+                    </p>
+                </div>
+                
+                <div class="amenity-card-large reveal">
+                    <div class="amenity-icon-large">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>On-Site Restaurant</h3>
+                    <p>
+                        Savor delicious local and continental cuisine at our on-site restaurant. Enjoy breakfast, 
+                        lunch, and dinner prepared by our skilled chefs.
+                    </p>
+                </div>
+                
+                <div class="amenity-card-large reveal">
+                    <div class="amenity-icon-large">
+                        <i class="fas fa-cocktail"></i>
+                    </div>
+                    <h3>Fully Stocked Bar</h3>
+                    <p>
+                        Relax and unwind at our bar featuring a wide selection of beverages, cocktails, and 
+                        refreshments. Perfect for socializing or quiet evening drinks.
+                    </p>
+                </div>
+                
+                <div class="amenity-card-large reveal">
+                    <div class="amenity-icon-large">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>24-Hour Reception</h3>
+                    <p>
+                        Our friendly, English-speaking staff is available round-the-clock to assist with any 
+                        requests or concerns you may have during your stay.
+                    </p>
+                </div>
+                
+                <div class="amenity-card-large reveal">
+                    <div class="amenity-icon-large">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Conference & Event Spaces</h3>
+                    <p>
+                        Host meetings, conferences, or special events in our versatile spaces. We provide 
+                        flexible arrangements to suit your specific needs.
+                    </p>
+                </div>
+                
+                <div class="amenity-card-large reveal">
+                    <div class="amenity-icon-large">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Organized Tours</h3>
+                    <p>
+                        Explore Ghana's beauty with our organized tours to over 20 tourist destinations across 
+                        the country. Let us help you discover amazing sights.
+                    </p>
+                </div>
+                
+                <div class="amenity-card-large reveal">
+                    <div class="amenity-icon-large">
+                        <i class="fas fa-smoking-ban"></i>
+                    </div>
+                    <h3>Smoke-Free Property</h3>
+                    <p>
+                        Breathe easy in our completely smoke-free environment, ensuring a fresh and healthy 
+                        atmosphere for all our guests.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dining Section -->
+    <section class="dining-section">
+        <div class="container">
+            <div class="dining-content">
+                <div class="dining-image reveal">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600" alt="Restaurant" loading="lazy">
+                </div>
+                
+                <div class="dining-text reveal">
+                    <span class="section-subtitle">DINING</span>
+                    <h2 class="section-title">Restaurant & Bar</h2>
+                    <p>
+                        Experience exceptional dining at Great Peace & Love Hotel. Our on-site restaurant 
+                        serves a delightful range of local Ghanaian dishes and continental favorites, all 
+                        prepared with fresh ingredients and authentic flavors.
+                    </p>
+                    <p>
+                        We understand that our guests have diverse schedules, which is why we offer flexible 
+                        meal support including early breakfast for early departures and late-night meals for 
+                        those arriving late or working into the evening.
+                    </p>
+                    
+                    <div class="dining-features">
+                        <div class="dining-feature">
+                            <i class="fas fa-coffee"></i>
+                            <span>Breakfast Available</span>
+                        </div>
+                        <div class="dining-feature">
+                            <i class="fas fa-drumstick-bite"></i>
+                            <span>Local & Continental</span>
+                        </div>
+                        <div class="dining-feature">
+                            <i class="fas fa-glass-cheers"></i>
+                            <span>Full Bar Service</span>
+                        </div>
+                        <div class="dining-feature">
+                            <i class="fas fa-utensils"></i>
+                            <span>Flexible Meal Times</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Facilities -->
+    <section class="business-section">
+        <div class="container">
+            <div class="business-content">
+                <div class="business-text reveal">
+                    <span class="section-subtitle">BUSINESS SERVICES</span>
+                    <h2 class="section-title">Conference & Event Facilities</h2>
+                    <p>
+                        Whether you're hosting a corporate meeting, training session, or special event, our 
+                        versatile conference spaces can accommodate your needs. We provide a professional 
+                        environment with flexible seating arrangements.
+                    </p>
+                    <p>
+                        Our dedicated staff will work with you to ensure your event runs smoothly, from setup 
+                        to catering arrangements. We understand the importance of your business events and 
+                        strive to make them successful.
+                    </p>
+                    
+                    <ul class="business-features">
+                        <li><i class="fas fa-check-circle"></i> Flexible seating arrangements</li>
+                        <li><i class="fas fa-check-circle"></i> Audio-visual equipment available</li>
+                        <li><i class="fas fa-check-circle"></i> Catering services</li>
+                        <li><i class="fas fa-check-circle"></i> High-speed Wi-Fi</li>
+                        <li><i class="fas fa-check-circle"></i> Professional support staff</li>
+                        <li><i class="fas fa-check-circle"></i> Accessible location</li>
+                    </ul>
+                    
+                    <button class="btn btn-primary" onclick="bookEvent()">
+                        <i class="fas fa-calendar-alt"></i>
+                        Inquire About Events
+                    </button>
+                </div>
+                
+                <div class="business-image reveal">
+                    <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=600" alt="Conference Room" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tours Section -->
+    <section class="tours-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">EXPLORE GHANA</span>
+                <h2 class="section-title">Organized Tours</h2>
+                <p class="section-description">
+                    Discover the beauty and culture of Ghana with our expertly organized tours to over 20 destinations
+                </p>
+            </div>
+            
+            <div class="tours-grid">
+                <div class="tour-card reveal">
+                    <div class="tour-image">
+                        <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=400" alt="Beach Tours" loading="lazy">
+                    </div>
+                    <div class="tour-content">
+                        <h3>Beach Destinations</h3>
+                        <p>Visit Ghana's stunning coastal beaches and enjoy the sun, sand, and sea.</p>
+                    </div>
+                </div>
+                
+                <div class="tour-card reveal">
+                    <div class="tour-image">
+                        <img src="https://images.unsplash.com/photo-1523906630133-f6934a1ab2b9?w=400" alt="Historical Sites" loading="lazy">
+                    </div>
+                    <div class="tour-content">
+                        <h3>Historical Sites</h3>
+                        <p>Explore Ghana's rich history at castles, forts, and cultural landmarks.</p>
+                    </div>
+                </div>
+                
+                <div class="tour-card reveal">
+                    <div class="tour-image">
+                        <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=400" alt="Nature Tours" loading="lazy">
+                    </div>
+                    <div class="tour-content">
+                        <h3>Nature & Wildlife</h3>
+                        <p>Experience Ghana's natural beauty in national parks and nature reserves.</p>
+                    </div>
+                </div>
+                
+                <div class="tour-card reveal">
+                    <div class="tour-image">
+                        <img src="https://images.unsplash.com/photo-1533094602577-198d3beab8ea?w=400" alt="Cultural Tours" loading="lazy">
+                    </div>
+                    <div class="tour-content">
+                        <h3>Cultural Experiences</h3>
+                        <p>Immerse yourself in Ghanaian culture through festivals and traditional villages.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-footer">
+                <button class="btn btn-primary btn-lg" onclick="bookTour()">
+                    <i class="fab fa-whatsapp"></i>
+                    Inquire About Tours
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Services -->
+    <section class="additional-services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">MORE SERVICES</span>
+                <h2 class="section-title">Additional Amenities</h2>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-item reveal">
+                    <i class="fas fa-language"></i>
+                    <h4>English-Speaking Staff</h4>
+                </div>
+                <div class="service-item reveal">
+                    <i class="fas fa-concierge-bell"></i>
+                    <h4>Concierge Service</h4>
+                </div>
+                <div class="service-item reveal">
+                    <i class="fas fa-shuttle-van"></i>
+                    <h4>Airport Transfers (on request)</h4>
+                </div>
+                <div class="service-item reveal">
+                    <i class="fas fa-broom"></i>
+                    <h4>Daily Housekeeping</h4>
+                </div>
+                <div class="service-item reveal">
+                    <i class="fas fa-newspaper"></i>
+                    <h4>Laundry Service</h4>
+                </div>
+                <div class="service-item reveal">
+                    <i class="fas fa-shield-alt"></i>
+                    <h4>Secure Environment</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-overlay"></div>
+        <div class="container">
+            <div class="cta-content reveal">
+                <h2>Experience All Our Amenities</h2>
+                <p>Book your stay today and enjoy world-class facilities and services</p>
+                <button class="btn btn-light btn-lg" onclick="bookNow()">
+                    <i class="fab fa-whatsapp"></i>
+                    Book via WhatsApp
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-hotel"></i>
+                        <div class="logo-text">
+                            <span class="logo-main">Great Peace & Love</span>
+                            <span class="logo-sub">Hotel</span>
+                        </div>
+                    </div>
+                    <p>
+                        Step into a world where elegance meets serenity. Experience luxury, comfort, 
+                        and exceptional service at one of Ashalaja's finest hotels.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://wa.me/233534078670" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="rooms.html">Rooms</a></li>
+                        <li><a href="amenities.html">Amenities</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="amenities.html">Restaurant & Bar</a></li>
+                        <li><a href="amenities.html">Free Wi-Fi</a></li>
+                        <li><a href="amenities.html">Free Parking</a></li>
+                        <li><a href="amenities.html">Conference Spaces</a></li>
+                        <li><a href="amenities.html">Organized Tours</a></li>
+                        <li><a href="amenities.html">24-Hour Reception</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+233534078670">+233 534 078 670</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Ashalaja, Greater Accra<br>Region, Ghana</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>24-Hour Check-in Available</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Great Peace & Love Hotel. All rights reserved.</p>
+                <p>Designed with <i class="fas fa-heart"></i> for excellence</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

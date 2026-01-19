@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Great Peace & Love Hotel in Ashalaja, Ghana. Call +233 534 078 670 or book via WhatsApp for instant confirmation.">
+    <title>Contact Us | Great Peace & Love Hotel</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="fas fa-hotel"></i>
+                <div class="logo-text">
+                    <span class="logo-main">Great Peace & Love</span>
+                    <span class="logo-sub">Hotel</span>
+                </div>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="rooms.html" class="nav-link">Rooms</a></li>
+                <li><a href="amenities.html" class="nav-link">Amenities</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            
+            <div class="nav-right">
+                <a href="tel:+233534078670" class="nav-phone">
+                    <i class="fas fa-phone"></i>
+                    <span>+233 534 078 670</span>
+                </a>
+                <button class="btn btn-primary book-btn" onclick="bookNow()">
+                    Book Now
+                </button>
+            </div>
+            
+            <button class="mobile-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-overlay"></div>
+        <div class="container">
+            <div class="page-header-content">
+                <h1 class="fade-in-up">Contact Us</h1>
+                <p class="fade-in-up">Get in touch - we're here to help</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <!-- Contact Info -->
+                <div class="contact-info reveal">
+                    <div class="section-header">
+                        <span class="section-subtitle">GET IN TOUCH</span>
+                        <h2 class="section-title">Contact Information</h2>
+                        <p>We're available 24/7 to assist you with bookings and inquiries</p>
+                    </div>
+                    
+                    <div class="contact-info-items">
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone / WhatsApp</h4>
+                                <a href="tel:+233534078670">+233 534 078 670</a>
+                                <p>Call or message us anytime</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>Ashalaja, Greater Accra Region<br>Ghana</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Check-in / Check-out</h4>
+                                <p>24-Hour Check-in Available<br>Flexible arrangements</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Quick Booking</h4>
+                                <button class="btn btn-primary" onclick="bookNow()">
+                                    <i class="fab fa-whatsapp"></i>
+                                    Book via WhatsApp
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-connect">
+                        <h4>Connect With Us</h4>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="https://wa.me/233534078670" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper reveal">
+                    <div class="contact-form-header">
+                        <h3>Send Us a Message</h3>
+                        <p>Fill out the form below and we'll get back to you as soon as possible</p>
+                    </div>
+                    
+                    <form class="contact-form" id="contactForm" onsubmit="handleContactSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">
+                                <i class="fas fa-user"></i>
+                                Full Name *
+                            </label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                required 
+                                placeholder="Enter your full name"
+                            >
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">
+                                    <i class="fas fa-envelope"></i>
+                                    Email Address *
+                                </label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    required 
+                                    placeholder="your.email@example.com"
+                                >
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">
+                                    <i class="fas fa-phone"></i>
+                                    Phone Number *
+                                </label>
+                                <input 
+                                    type="tel" 
+                                    id="phone" 
+                                    name="phone" 
+                                    required 
+                                    placeholder="+233 XX XXX XXXX"
+                                >
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">
+                                <i class="fas fa-tag"></i>
+                                Subject *
+                            </label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="booking">Room Booking Inquiry</option>
+                                <option value="event">Event / Conference Inquiry</option>
+                                <option value="tour">Tour Services</option>
+                                <option value="general">General Question</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">
+                                <i class="fas fa-comment"></i>
+                                Message *
+                            </label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                rows="6" 
+                                required 
+                                placeholder="Tell us how we can help you..."
+                            ></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                        
+                        <p class="form-note">
+                            * Required fields. For immediate booking, please use our 
+                            <button type="button" class="link-btn" onclick="bookNow()">WhatsApp booking</button> service.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">LOCATION</span>
+                <h2 class="section-title">Find Us</h2>
+                <p class="section-description">
+                    We're conveniently located in Ashalaja, Greater Accra Region
+                </p>
+            </div>
+            
+            <div class="map-container reveal">
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>Great Peace & Love Hotel</h3>
+                    <p>Ashalaja, Greater Accra Region, Ghana</p>
+                    <a href="https://maps.google.com/?q=Ashalaja,Greater+Accra,Ghana" target="_blank" class="btn btn-primary">
+                        <i class="fas fa-directions"></i>
+                        Get Directions
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">FREQUENTLY ASKED</span>
+                <h2 class="section-title">Common Questions</h2>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item reveal">
+                    <div class="faq-question">
+                        <h4>What is the check-in and check-out time?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer 24-hour check-in service for your convenience. Check-out is flexible and can be arranged based on your needs. Please contact us to make special arrangements.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item reveal">
+                    <div class="faq-question">
+                        <h4>How can I book a room?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The easiest way to book is via WhatsApp at +233 534 078 670. You can also call us directly at the same number. Our staff is available 24/7 to assist with your booking.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item reveal">
+                    <div class="faq-question">
+                        <h4>Do you offer airport transfers?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we can arrange airport transfers upon request. Please contact us in advance to make arrangements and discuss pricing.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item reveal">
+                    <div class="faq-question">
+                        <h4>Is parking available at the hotel?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we provide free private parking on-site for all our guests. Your vehicle will be safe and easily accessible throughout your stay.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item reveal">
+                    <div class="faq-question">
+                        <h4>Do you provide meals and is breakfast included?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We have an on-site restaurant serving breakfast, lunch, and dinner. Breakfast availability can be confirmed during booking. We offer flexible meal support including early breakfast and late-night meals.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item reveal">
+                    <div class="faq-question">
+                        <h4>Can you arrange tours to tourist destinations?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! We organize tours to over 20 tourist destinations across Ghana. Contact us to discuss your interests and we'll help plan an unforgettable experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-overlay"></div>
+        <div class="container">
+            <div class="cta-content reveal">
+                <h2>Ready to Book Your Stay?</h2>
+                <p>Contact us now for instant confirmation and special rates</p>
+                <button class="btn btn-light btn-lg" onclick="bookNow()">
+                    <i class="fab fa-whatsapp"></i>
+                    Book via WhatsApp
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-hotel"></i>
+                        <div class="logo-text">
+                            <span class="logo-main">Great Peace & Love</span>
+                            <span class="logo-sub">Hotel</span>
+                        </div>
+                    </div>
+                    <p>
+                        Step into a world where elegance meets serenity. Experience luxury, comfort, 
+                        and exceptional service at one of Ashalaja's finest hotels.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://wa.me/233534078670" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="rooms.html">Rooms</a></li>
+                        <li><a href="amenities.html">Amenities</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="amenities.html">Restaurant & Bar</a></li>
+                        <li><a href="amenities.html">Free Wi-Fi</a></li>
+                        <li><a href="amenities.html">Free Parking</a></li>
+                        <li><a href="amenities.html">Conference Spaces</a></li>
+                        <li><a href="amenities.html">Organized Tours</a></li>
+                        <li><a href="amenities.html">24-Hour Reception</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+233534078670">+233 534 078 670</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Ashalaja, Greater Accra<br>Region, Ghana</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>24-Hour Check-in Available</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Great Peace & Love Hotel. All rights reserved.</p>
+                <p>Designed with <i class="fas fa-heart"></i> for excellence</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

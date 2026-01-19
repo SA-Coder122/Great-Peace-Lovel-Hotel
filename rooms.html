@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore our comfortable rooms at Great Peace & Love Hotel - Executive, First Class, and Second Class rooms with modern amenities in Ashalaja, Ghana."
+    />
+    <title>Rooms & Suites | Great Peace & Love Hotel</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="container nav-container">
+        <div class="logo">
+          <i class="fas fa-hotel"></i>
+          <div class="logo-text">
+            <span class="logo-main">Great Peace & Love</span>
+            <span class="logo-sub">Hotel</span>
+          </div>
+        </div>
+
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="rooms.html" class="nav-link active">Rooms</a></li>
+          <li><a href="amenities.html" class="nav-link">Amenities</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-right">
+          <a href="tel:+233534078670" class="nav-phone">
+            <i class="fas fa-phone"></i>
+            <span>+233 534 078 670</span>
+          </a>
+          <button class="btn btn-primary book-btn" onclick="bookNow()">
+            Book Now
+          </button>
+        </div>
+
+        <button class="mobile-toggle" id="mobileToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="page-header-overlay"></div>
+      <div class="container">
+        <div class="page-header-content">
+          <h1 class="fade-in-up">Our Rooms & Suites</h1>
+          <p class="fade-in-up">
+            Choose from our range of comfortable accommodations
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section class="rooms-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">ACCOMMODATION</span>
+          <h2 class="section-title">Find Your Perfect Room</h2>
+          <p class="section-description">
+            All our rooms feature air conditioning, LED TV, private bathroom
+            with bathtub & shower, private balcony, work desk, wardrobe, and
+            complimentary Wi-Fi
+          </p>
+        </div>
+
+        <!-- Executive Rooms -->
+        <div class="room-detail reveal">
+          <div class="room-detail-image">
+            <img
+              src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800"
+              alt="Executive Room"
+              loading="lazy"
+            />
+            <div class="room-badge">Most Popular</div>
+          </div>
+          <div class="room-detail-content">
+            <div class="room-header">
+              <div>
+                <span class="room-category">PREMIUM</span>
+                <h3>Executive Rooms</h3>
+                <div class="room-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+
+            <p class="room-description">
+              Our Executive Rooms are designed for discerning guests who
+              appreciate the finer things. Featuring premium furnishings,
+              spacious layouts, and elegant décor, these rooms provide the
+              ultimate in comfort and style. Perfect for business travelers and
+              guests seeking a luxurious stay.
+            </p>
+
+            <div class="room-features-grid">
+              <div class="feature-item">
+                <i class="fas fa-bed"></i>
+                <span>King-Size Bed</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-tv"></i>
+                <span>LED Smart TV</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-snowflake"></i>
+                <span>Air Conditioning</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-bath"></i>
+                <span>Bathtub & Shower</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-door-open"></i>
+                <span>Private Balcony</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-desktop"></i>
+                <span>Work Desk</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-wifi"></i>
+                <span>Free Wi-Fi</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-tshirt"></i>
+                <span>Wardrobe</span>
+              </div>
+            </div>
+
+            <div class="room-actions">
+              <button
+                class="btn btn-primary btn-lg"
+                onclick="openBookingModal('Executive Room')"
+              >
+                <i class="fab fa-whatsapp"></i>
+                Book Executive Room
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- First Class Rooms -->
+        <div class="room-detail reveal">
+          <div class="room-detail-content">
+            <div class="room-header">
+              <div>
+                <span class="room-category">SUPERIOR</span>
+                <h3>First Class Rooms</h3>
+                <div class="room-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+
+            <p class="room-description">
+              Our First Class Rooms offer excellent value without compromising
+              on quality. These well-appointed rooms feature all essential
+              amenities for a comfortable and relaxing stay. Ideal for travelers
+              who want a perfect balance of comfort and affordability.
+            </p>
+
+            <div class="room-features-grid">
+              <div class="feature-item">
+                <i class="fas fa-bed"></i>
+                <span>Queen-Size Bed</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-tv"></i>
+                <span>LED Digital TV</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-snowflake"></i>
+                <span>Air Conditioning</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-bath"></i>
+                <span>Bathtub & Shower</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-door-open"></i>
+                <span>Private Balcony</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-desktop"></i>
+                <span>Work Desk</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-wifi"></i>
+                <span>Free Wi-Fi</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-tshirt"></i>
+                <span>Wardrobe</span>
+              </div>
+            </div>
+
+            <div class="room-actions">
+              <button
+                class="btn btn-primary btn-lg"
+                onclick="openBookingModal('First Class Room')"
+              >
+                <i class="fab fa-whatsapp"></i>
+                Book First Class Room
+              </button>
+            </div>
+          </div>
+          <div class="room-detail-image">
+            <img
+              src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800"
+              alt="First Class Room"
+              loading="lazy"
+            />
+          </div>
+        </div>
+
+        <!-- Second Class Rooms -->
+        <div class="room-detail reveal">
+          <div class="room-detail-image">
+            <img
+              src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800"
+              alt="Second Class Room"
+              loading="lazy"
+            />
+            <div class="room-badge">Best Value</div>
+          </div>
+          <div class="room-detail-content">
+            <div class="room-header">
+              <div>
+                <span class="room-category">STANDARD</span>
+                <h3>Second Class Rooms</h3>
+                <div class="room-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+
+            <p class="room-description">
+              Our Second Class Rooms provide cozy and affordable accommodation
+              without sacrificing essential comforts. These rooms are perfect
+              for budget-conscious travelers who still want a clean,
+              comfortable, and peaceful place to stay during their visit to
+              Ashalaja.
+            </p>
+
+            <div class="room-features-grid">
+              <div class="feature-item">
+                <i class="fas fa-bed"></i>
+                <span>Comfortable Bed</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-tv"></i>
+                <span>Digital TV</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-snowflake"></i>
+                <span>Air Conditioning</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-shower"></i>
+                <span>Private Bathroom</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-door-open"></i>
+                <span>Private Balcony</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-desktop"></i>
+                <span>Work Desk</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-wifi"></i>
+                <span>Free Wi-Fi</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-tshirt"></i>
+                <span>Wardrobe</span>
+              </div>
+            </div>
+
+            <div class="room-actions">
+              <button
+                class="btn btn-primary btn-lg"
+                onclick="openBookingModal('Second Class Room')"
+              >
+                <i class="fab fa-whatsapp"></i>
+                Book Second Class Room
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Amenities Preview -->
+    <section class="amenities-preview">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">FACILITIES</span>
+          <h2 class="section-title">All Rooms Include</h2>
+        </div>
+
+        <div class="amenities-grid">
+          <div class="amenity-item reveal">
+            <i class="fas fa-snowflake"></i>
+            <span>Air Conditioning</span>
+          </div>
+          <div class="amenity-item reveal">
+            <i class="fas fa-tv"></i>
+            <span>LED TV</span>
+          </div>
+          <div class="amenity-item reveal">
+            <i class="fas fa-wifi"></i>
+            <span>Free Wi-Fi</span>
+          </div>
+          <div class="amenity-item reveal">
+            <i class="fas fa-bath"></i>
+            <span>Private Bathroom</span>
+          </div>
+          <div class="amenity-item reveal">
+            <i class="fas fa-door-open"></i>
+            <span>Private Balcony</span>
+          </div>
+          <div class="amenity-item reveal">
+            <i class="fas fa-desktop"></i>
+            <span>Work Desk</span>
+          </div>
+          <div class="amenity-item reveal">
+            <i class="fas fa-tshirt"></i>
+            <span>Wardrobe</span>
+          </div>
+          <div class="amenity-item reveal">
+            <i class="fas fa-concierge-bell"></i>
+            <span>24/7 Service</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="cta-overlay"></div>
+      <div class="container">
+        <div class="cta-content reveal">
+          <h2>Ready to Book Your Room?</h2>
+          <p>
+            Contact us via WhatsApp for instant booking confirmation and special
+            rates
+          </p>
+          <button class="btn btn-light btn-lg" onclick="bookNow()">
+            <i class="fab fa-whatsapp"></i>
+            Book via WhatsApp
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <i class="fas fa-hotel"></i>
+              <div class="logo-text">
+                <span class="logo-main">Great Peace & Love</span>
+                <span class="logo-sub">Hotel</span>
+              </div>
+            </div>
+            <p>
+              Step into a world where elegance meets serenity. Experience
+              luxury, comfort, and exceptional service at one of Ashalaja's
+              finest hotels.
+            </p>
+            <div class="footer-social">
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="https://wa.me/233534078670" aria-label="WhatsApp"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="rooms.html">Rooms</a></li>
+              <li><a href="amenities.html">Amenities</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Services</h3>
+            <ul class="footer-links">
+              <li><a href="amenities.html">Restaurant & Bar</a></li>
+              <li><a href="amenities.html">Free Wi-Fi</a></li>
+              <li><a href="amenities.html">Free Parking</a></li>
+              <li><a href="amenities.html">Conference Spaces</a></li>
+              <li><a href="amenities.html">Organized Tours</a></li>
+              <li><a href="amenities.html">24-Hour Reception</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Contact Us</h3>
+            <ul class="footer-contact">
+              <li>
+                <i class="fas fa-phone"></i>
+                <a href="tel:+233534078670">+233 534 078 670</a>
+              </li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Ashalaja, Greater Accra<br />Region, Ghana</span>
+              </li>
+              <li>
+                <i class="fas fa-clock"></i>
+                <span>24-Hour Check-in Available</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 Great Peace & Love Hotel. All rights reserved.</p>
+          <p>Designed with <i class="fas fa-heart"></i> for excellence</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div class="booking-modal" id="bookingModal">
+      <div class="booking-modal-overlay" onclick="closeBookingModal()"></div>
+      <div class="booking-modal-content">
+        <button class="booking-modal-close" onclick="closeBookingModal()">
+          <i class="fas fa-times"></i>
+        </button>
+        
+        <div class="booking-modal-header">
+          <h3>Book Your Stay</h3>
+          <p id="selectedRoomType">Executive Room</p>
+        </div>
+        
+        <form class="booking-form" id="bookingForm" onsubmit="handleBookingSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="bookingName">
+                <i class="fas fa-user"></i>
+                Full Name *
+              </label>
+              <input 
+                type="text" 
+                id="bookingName" 
+                name="name" 
+                required 
+                placeholder="Enter your full name"
+              >
+            </div>
+            
+            <div class="form-group">
+              <label for="bookingEmail">
+                <i class="fas fa-envelope"></i>
+                Email Address *
+              </label>
+              <input 
+                type="email" 
+                id="bookingEmail" 
+                name="email" 
+                required 
+                placeholder="your.email@example.com"
+              >
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="bookingPhone">
+                <i class="fas fa-phone"></i>
+                Phone Number *
+              </label>
+              <input 
+                type="tel" 
+                id="bookingPhone" 
+                name="phone" 
+                required 
+                placeholder="+233 XX XXX XXXX"
+              >
+            </div>
+            
+            <div class="form-group">
+              <label for="bookingGuests">
+                <i class="fas fa-users"></i>
+                Number of Guests *
+              </label>
+              <select id="bookingGuests" name="guests" required>
+                <option value="">Select guests</option>
+                <option value="1">1 Guest</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5+">5+ Guests</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="checkIn">
+                <i class="fas fa-calendar-check"></i>
+                Check-in Date *
+              </label>
+              <input 
+                type="date" 
+                id="checkIn" 
+                name="checkIn" 
+                required
+              >
+            </div>
+            
+            <div class="form-group">
+              <label for="checkOut">
+                <i class="fas fa-calendar-times"></i>
+                Check-out Date *
+              </label>
+              <input 
+                type="date" 
+                id="checkOut" 
+                name="checkOut" 
+                required
+              >
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="specialRequests">
+              <i class="fas fa-comment"></i>
+              Special Requests (Optional)
+            </label>
+            <textarea 
+              id="specialRequests" 
+              name="requests" 
+              rows="4" 
+              placeholder="Any special requirements or requests?"
+            ></textarea>
+          </div>
+          
+          <div class="booking-form-actions">
+            <button type="submit" class="btn btn-primary btn-lg btn-block">
+              <i class="fab fa-whatsapp"></i>
+              Confirm Booking via WhatsApp
+            </button>
+            <button type="button" class="btn btn-secondary btn-block" onclick="closeBookingModal()">
+              Cancel
+            </button>
+          </div>
+          
+          <p class="form-note">
+            <i class="fas fa-info-circle"></i>
+            Your booking will be sent via WhatsApp for instant confirmation.
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>

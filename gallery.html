@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore our photo gallery showcasing the beautiful rooms, facilities, and atmosphere at Great Peace & Love Hotel in Ashalaja, Ghana."
+    />
+    <title>Gallery | Great Peace & Love Hotel</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="container nav-container">
+        <div class="logo">
+          <i class="fas fa-hotel"></i>
+          <div class="logo-text">
+            <span class="logo-main">Great Peace & Love</span>
+            <span class="logo-sub">Hotel</span>
+          </div>
+        </div>
+
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="rooms.html" class="nav-link">Rooms</a></li>
+          <li><a href="amenities.html" class="nav-link">Amenities</a></li>
+          <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-right">
+          <a href="tel:+233534078670" class="nav-phone">
+            <i class="fas fa-phone"></i>
+            <span>+233 534 078 670</span>
+          </a>
+          <button class="btn btn-primary book-btn" onclick="bookNow()">
+            Book Now
+          </button>
+        </div>
+
+        <button class="mobile-toggle" id="mobileToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="page-header-overlay"></div>
+      <div class="container">
+        <div class="page-header-content">
+          <h1 class="fade-in-up">Our Gallery</h1>
+          <p class="fade-in-up">Take a visual tour of our beautiful hotel</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">VISUAL TOUR</span>
+          <h2 class="section-title">Explore Our Hotel</h2>
+          <p class="section-description">
+            Browse through our collection of images showcasing our rooms,
+            facilities, and the serene atmosphere
+          </p>
+        </div>
+
+        <!-- Gallery Filter -->
+        <div class="gallery-filter">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="rooms">Rooms</button>
+          <button class="filter-btn" data-filter="dining">Dining</button>
+          <button class="filter-btn" data-filter="facilities">
+            Facilities
+          </button>
+          <button class="filter-btn" data-filter="exterior">Exterior</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid">
+          <!-- Rooms -->
+          <div class="gallery-item reveal" data-category="rooms">
+            <img
+              src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=600"
+              alt="Executive Room"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <h3>Executive Room</h3>
+              <button class="gallery-view-btn" onclick="openLightbox(this)">
+                <i class="fas fa-search-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="rooms">
+            <img
+              src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=600"
+              alt="First Class Room"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <h3>First Class Room</h3>
+              <button class="gallery-view-btn" onclick="openLightbox(this)">
+                <i class="fas fa-search-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="rooms">
+            <img
+              src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600"
+              alt="Second Class Room"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <h3>Second Class Room</h3>
+              <button class="gallery-view-btn" onclick="openLightbox(this)">
+                <i class="fas fa-search-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="rooms">
+            <img
+              src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=600"
+              alt="Room Interior"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <h3>Room Interior</h3>
+              <button class="gallery-view-btn" onclick="openLightbox(this)">
+                <i class="fas fa-search-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="rooms">
+            <img
+              src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600"
+              alt="Bedroom View"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <h3>Bedroom View</h3>
+              <button class="gallery-view-btn" onclick="openLightbox(this)">
+                <i class="fas fa-search-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="rooms">
+            <img
+              src="https://images.unsplash.com/photo-1595576508898-0ad5c879a061?w=600"
+              alt="Bathroom"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <h3>Bathroom</h3>
+              <button class="gallery-view-btn" onclick="openLightbox(this)">
+                <i class="fas fa-search-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Dining -->
+          <div class="gallery-item reveal" data-category="dining">
+            <img
+              src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600"
+              alt="Restaurant"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <h3>Restaurant</h3>
+              <button class="gallery-view-btn" onclick="openLightbox(this)">
+                <i class="fas fa-search-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="dining">
+            <img
+              src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600"
+              alt="Dining Area"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <h3>Dining Area</h3>
+              <button class="gallery-view-btn" onclick="openLightbox(this)">
+                <i class="fas fa-search-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="dining">
+            <img
+              src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"
+              alt="Bar Area"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <h3>Bar Area</h3>
+              <button class="gallery-view-btn" onclick="openLightbox(this)">
+                <i class="fas fa-search-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Facilities -->
+          <div class="gallery-item reveal" data-category="facilities">
+            <img
+              src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=600"
+              alt="Reception"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <h3>Reception Area</h3>
+              <button class="gallery-view-btn" onclick="openLightbox(this)">
+                <i class="fas fa-search-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="facilities">
+            <img
+              src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=600"
+              alt="Conference Room"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <h3>Conference Room</h3>
+              <button class="gallery-view-btn" onclick="openLightbox(this)">
+                <i class="fas fa-search-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="facilities">
+            <img
+              src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600"
+              alt="Lounge Area"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <h3>Lounge Area</h3>
+              <button class="gallery-view-btn" onclick="openLightbox(this)">
+                <i class="fas fa-search-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Exterior -->
+          <div class="gallery-item reveal" data-category="exterior">
+            <img
+              src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=600"
+              alt="Hotel Exterior"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <h3>Hotel Building</h3>
+              <button class="gallery-view-btn" onclick="openLightbox(this)">
+                <i class="fas fa-search-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="exterior">
+            <img
+              src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=600"
+              alt="Entrance"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <h3>Hotel Entrance</h3>
+              <button class="gallery-view-btn" onclick="openLightbox(this)">
+                <i class="fas fa-search-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="exterior">
+            <img
+              src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=600"
+              alt="Parking"
+              loading="lazy"
+            />
+            <div class="gallery-overlay">
+              <h3>Parking Area</h3>
+              <button class="gallery-view-btn" onclick="openLightbox(this)">
+                <i class="fas fa-search-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox-close" onclick="closeLightbox()">
+        <i class="fas fa-times"></i>
+      </button>
+      <button class="lightbox-prev" onclick="navigateLightbox(-1)">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="lightbox-next" onclick="navigateLightbox(1)">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+      <div class="lightbox-content">
+        <img src="" alt="" id="lightboxImage" />
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+      </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="cta-overlay"></div>
+      <div class="container">
+        <div class="cta-content reveal">
+          <h2>Liked What You See?</h2>
+          <p>
+            Experience it firsthand - book your stay at Great Peace & Love Hotel
+            today
+          </p>
+          <button class="btn btn-light btn-lg" onclick="bookNow()">
+            <i class="fab fa-whatsapp"></i>
+            Book via WhatsApp
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <i class="fas fa-hotel"></i>
+              <div class="logo-text">
+                <span class="logo-main">Great Peace & Love</span>
+                <span class="logo-sub">Hotel</span>
+              </div>
+            </div>
+            <p>
+              Step into a world where elegance meets serenity. Experience
+              luxury, comfort, and exceptional service at one of Ashalaja's
+              finest hotels.
+            </p>
+            <div class="footer-social">
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="https://wa.me/233534078670" aria-label="WhatsApp"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="rooms.html">Rooms</a></li>
+              <li><a href="amenities.html">Amenities</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Services</h3>
+            <ul class="footer-links">
+              <li><a href="amenities.html">Restaurant & Bar</a></li>
+              <li><a href="amenities.html">Free Wi-Fi</a></li>
+              <li><a href="amenities.html">Free Parking</a></li>
+              <li><a href="amenities.html">Conference Spaces</a></li>
+              <li><a href="amenities.html">Organized Tours</a></li>
+              <li><a href="amenities.html">24-Hour Reception</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Contact Us</h3>
+            <ul class="footer-contact">
+              <li>
+                <i class="fas fa-phone"></i>
+                <a href="tel:+233534078670">+233 534 078 670</a>
+              </li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Ashalaja, Greater Accra<br />Region, Ghana</span>
+              </li>
+              <li>
+                <i class="fas fa-clock"></i>
+                <span>24-Hour Check-in Available</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 Great Peace & Love Hotel. All rights reserved.</p>
+          <p>Designed with <i class="fas fa-heart"></i> for excellence</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
