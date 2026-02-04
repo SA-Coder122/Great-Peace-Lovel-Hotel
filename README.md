@@ -9,7 +9,7 @@ The site highlights the hotel’s rooms, amenities, gallery, and services, with 
 
 The Great Peace & Love Hotel website is built with **pure HTML, CSS, and JavaScript** to ensure speed, simplicity, and ease of maintenance.  
 It provides a smooth user experience across all devices while helping guests explore the hotel and book instantly via WhatsApp.
-
+ 
 ---
 
 ## 🗂 Project Structure
